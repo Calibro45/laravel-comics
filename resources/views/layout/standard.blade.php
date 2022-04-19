@@ -9,8 +9,13 @@
 </head>
 <body>
     
+    <!-- header -->
     @include('partials.header')
 
+
+
+    <!-- footer -->
+    @include('partials.footer')
 
 </body>
 </html>
