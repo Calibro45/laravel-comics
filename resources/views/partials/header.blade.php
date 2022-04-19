@@ -1,6 +1,10 @@
 @php 
     $links = [
         [
+            'href' => '/',
+            'text' => 'home',
+        ],
+        [
             'href' => '#',
             'text' => 'characters',
         ],

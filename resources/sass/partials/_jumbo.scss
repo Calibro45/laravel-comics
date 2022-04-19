@@ -1,0 +1,11 @@
+.jumbotron {
+    height: 400px;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+
+    .container {
+        height: 100%;
+        position: relative;
+        padding: 0px 5px;
+    }
+}

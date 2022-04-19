@@ -79,6 +79,17 @@ img {
   right: 0;
 }
 
+.jumbotron {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+.jumbotron .container {
+  height: 100%;
+  position: relative;
+  padding: 0px 5px;
+}
+
 #contatti {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;

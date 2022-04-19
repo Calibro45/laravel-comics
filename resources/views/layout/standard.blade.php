@@ -13,6 +13,13 @@
     @include('partials.header')
 
 
+    <!-- main -->
+    <main>
+
+        <!-- jumbo section -->
+        @include('partials.jumbo')
+
+    </main>
 
     <!-- footer -->
     @include('partials.footer')
