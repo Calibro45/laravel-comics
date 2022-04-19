@@ -1,0 +1,59 @@
+@import 'variabili';
+
+.main-header {
+    padding: 0 10px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 110px;
+        gap: 20px;
+
+        .logo {
+            width: 85px;
+            height: 85px;
+            align-self: center;
+            flex-shrink: 0;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            ol {
+                display: contents;
+            }
+
+            .nav-link {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                color: $linkColor;
+                position: relative;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &.active, &:hover {
+                    color: $primaryColor;
+
+                    a::after {
+                        content: '';
+                        display: block;
+                        height: 5px;
+                        background-color: $primaryColor;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

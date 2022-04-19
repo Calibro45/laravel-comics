@@ -53,7 +53,7 @@
         <nav class="main-nav">
             <ol>
                 @foreach ($links as $link)
-                    <li>
+                    <li class="nav-link">
                         <a href="{{ $link['href'] }}">{{ $link['text'] }}</a>
                     </li>
                 @endforeach
