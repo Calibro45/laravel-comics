@@ -1,0 +1,9 @@
+@import 'variabili';
+
+@mixin button {
+    color: #fff;
+    background-color: $primaryColor;        
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}

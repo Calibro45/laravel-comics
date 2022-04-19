@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;
-
-400;500;700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,8 +9,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-ol,
-ul {
+ol, ul {
   list-style-type: none;
 }
 
@@ -35,31 +32,26 @@ img {
 .main-header {
   padding: 0 10px;
 }
-
 .main-header .container {
   display: flex;
   justify-content: space-between;
   min-height: 110px;
   gap: 20px;
 }
-
 .main-header .container .logo {
   width: 85px;
   height: 85px;
   align-self: center;
   flex-shrink: 0;
 }
-
 .main-header .container .main-nav {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .main-header .container .main-nav ol {
   display: contents;
 }
-
 .main-header .container .main-nav .nav-link {
   text-transform: uppercase;
   font-size: 14px;
@@ -67,21 +59,16 @@ img {
   color: #464646;
   position: relative;
 }
-
 .main-header .container .main-nav .nav-link a {
   display: block;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
-.main-header .container .main-nav .nav-link.active,
-.main-header .container .main-nav .nav-link:hover {
+.main-header .container .main-nav .nav-link.active, .main-header .container .main-nav .nav-link:hover {
   color: #0282f9;
 }
-
-.main-header .container .main-nav .nav-link.active a::after,
-.main-header .container .main-nav .nav-link:hover a::after {
+.main-header .container .main-nav .nav-link.active a::after, .main-header .container .main-nav .nav-link:hover a::after {
   content: "";
   display: block;
   height: 5px;
@@ -92,3 +79,79 @@ img {
   right: 0;
 }
 
+#contatti {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: top;
+}
+#contatti .container {
+  display: flex;
+  background-image: url("../img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  gap: 10px;
+}
+#contatti .contact-wrap {
+  width: 12%;
+  padding: 50px 10px;
+}
+#contatti .contact-wrap .contact-title {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#contatti .contact-wrap .contact-list {
+  color: #959595;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#contatti .contact-wrap .contact-list .contact-link {
+  padding: 5px 0px;
+}
+
+#info {
+  background-color: #303030;
+  padding: 25px 5px;
+}
+#info .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#info .container .login {
+  flex-grow: 1;
+}
+#info .container .login .sign-in {
+  background-color: transparent;
+  color: #fff;
+  padding: 15px;
+  border: 2px solid #0282f9;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#info .container .login:hover {
+  cursor: pointer;
+}
+#info .container h3 {
+  color: #0282f9;
+  text-transform: uppercase;
+}
+#info .container .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#info .container .social .social-item {
+  width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  #contatti .contact-wrap {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #info .container {
+    flex-direction: column;
+  }
+}

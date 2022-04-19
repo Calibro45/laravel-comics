@@ -1,0 +1,99 @@
+@import 'mixins';
+
+#contatti {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-position: top;
+
+    .container {
+        display: flex;
+        background-image: url('../img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        gap: 10px;
+    }
+
+    .contact-wrap {
+        width: 12%;
+        padding: 50px 10px;
+
+        .contact-title {
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .contact-list {
+            color: #959595;
+            font-size: 14px;
+            margin-bottom: 20px;
+
+            .contact-link {
+                padding: 5px 0px;
+            }
+        }
+    }
+}
+
+#info {
+    background-color: #303030;
+    padding: 25px 5px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .login {
+            flex-grow: 1;
+            
+            .sign-in {
+                background-color: transparent;
+                color: #fff;
+                padding: 15px;
+                border: 2px solid $primaryColor;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }   
+        }
+        h3 {
+            color: $primaryColor;
+            text-transform: uppercase;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .social-item {
+                width: 40px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #contatti {
+
+        .contact-wrap {
+            width: 33%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #info {
+
+        .container {
+            flex-direction: column;
+        }
+    }
+}
