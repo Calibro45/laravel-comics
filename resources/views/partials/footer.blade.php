@@ -113,23 +113,23 @@
 
     $socialLink = [
         [
-            'image' => 'footer-facebook.png',
+            'image' => 'img/footer-facebook.png',
             'ancora' => '#'
         ],
         [
-            'image' => 'footer-twitter.png',
+            'image' => 'img/footer-twitter.png',
             'ancora' => '#'
         ],
         [
-            'image' => 'footer-youtube.png',
+            'image' => 'img/footer-youtube.png',
             'ancora' => '#'
         ],
         [
-            'image' => 'footer-pinterest.png',
+            'image' => 'img/footer-pinterest.png',
             'ancora' => '#'
         ],
         [
-            'image' => 'footer-periscope.png',
+            'image' => 'img/footer-periscope.png',
             'ancora' => '#'
         ],
     ]
@@ -199,6 +199,8 @@
         </div>
     </section>
 
+    <!-- info e social -->
+
     <section id="info">
         <div class="container">
 
@@ -209,12 +211,18 @@
                 <h3>Follow Us</h3>
             </div>
 
+            <!-- social link -->
+
             <ol class="social">
+
+                @foreach($socialLink as $link)
                 <li class="social-item">
-                    <a href="#">
-                        <img src="" alt="">
+                    <a href="{{ $link['ancora'] }}">
+                        <img src="{{ asset($link['image'])}}" alt="">
                     </a>
                 </li>
+                @endforeach
+
             </ol>
 
         </div>
