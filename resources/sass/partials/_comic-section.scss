@@ -2,11 +2,29 @@
     min-height: 500px;
     background-color: #1c1c1c;
     padding: 50px 5px;
+    position: relative;
 
     .container {
         display: flex;
         flex-wrap: wrap;
         gap: 20px 1%;
+
+        .current-cta {
+            @include button;
+            padding: 15px 30px;
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        // comics card style
+        
+        @import 'partials/comicsCard';
 
         .comics-cta {
             text-align: center;
@@ -25,44 +43,22 @@
     }
 }
 
-// comics card style
+// banner style
 
-.comics-card-wrap {
-    width: calc(95% / 6);
-    padding: 5px;
+@import 'partials/banner';
 
-    .card-header {
-        
-        img {
-            aspect-ratio: 1;
-            object-fit: cover;
-            object-position: top;
-            
-        }
-    }
-
-    .card-body {
-        color: #fff;
-        text-transform: uppercase;
-        padding: 25px 0px;
-
-        h4 {
-            font-weight: 400;
-            font-size: 14px;
-        }
-    }
-}
+// media query
 
 @media screen and (max-width: 768px) {
     
-    .comics-card-wrap {
+    #comics .container .comics-card-wrap {
         width: calc(98% / 3);
     }
 }
 
 @media screen and (max-width: 576px) {
     
-    .comics-card-wrap {
+    #comics .container .comics-card-wrap {
         width: 100%;
     }
 }

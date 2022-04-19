@@ -53,11 +53,12 @@
                 border: 2px solid $primaryColor;
                 text-transform: uppercase;
                 font-weight: 700;
+                
+                &:hover {
+                    cursor: pointer;
+                }   
             }
 
-            &:hover {
-                cursor: pointer;
-            }   
         }
         h3 {
             color: $primaryColor;
