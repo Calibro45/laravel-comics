@@ -19,6 +19,9 @@
         <!-- jumbo section -->
         @include('partials.jumbo')
 
+        <!-- section dynamic -->
+        @yield('mainContent')
+
     </main>
 
     <!-- footer -->

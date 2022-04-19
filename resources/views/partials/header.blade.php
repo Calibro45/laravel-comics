@@ -9,7 +9,7 @@
             'text' => 'characters',
         ],
         [
-            'href' => '#',
+            'href' => '/comics',
             'text' => 'comics',
         ],
         [
