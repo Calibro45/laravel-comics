@@ -220,6 +220,11 @@ img {
     width: 100%;
   }
 }
+.container-md {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 #contatti {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;

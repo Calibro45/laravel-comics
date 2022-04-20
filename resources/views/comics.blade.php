@@ -2,25 +2,25 @@
 
 @section('mainContent')
 
-<!-- comic section -->
+    <!-- comic section -->
 
-<section id="comics">
-    <div class="container">
+    <section id="comics">
+        <div class="container">
 
-        <button class="current-cta">Current Series</button>
+            <button class="current-cta">Current Series</button>
 
-        <!-- comics card -->
-        @include('partials.comicsCard')
-                
-        <div class="comics-cta">
-            <button>load more</button>
+            <!-- comics card -->
+            @include('partials.comicsCard')
+                    
+            <div class="comics-cta">
+                <button>load more</button>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- banner section -->
 
-<!-- banner section -->
-
-@include('partials.banner')
+    @include('partials.banner')
 
 @endsection

@@ -23,15 +23,15 @@ Route::get('/comics', function () {
     return view('comics', [
         'comics' => $comics
     ]);
-});
+})->name('comics.index');
 
 Route::get('/comics/{id}', function($id) {
     $comics = config('comics');
 
+    $detail = $comics[$id];
+
     abort_if(! isset($comics[$id]), 404);
 
-    
+    return view('details')->with('comic', $detail);
 
-    dd($comics[$id]);
-
-})->where('id', '[0-9]+');
+})->where('id', '[0-9]+')->name('comics.show');
