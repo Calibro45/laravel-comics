@@ -228,6 +228,7 @@ img {
 #banner-comic {
   background-color: #0282f9;
   min-height: 80px;
+  margin-bottom: 25px;
   position: relative;
 }
 #banner-comic .comic-wrap {
@@ -252,6 +253,20 @@ img {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+#comic-description {
+  color: #464646;
+}
+#comic-description .container-md {
+  display: flex;
+  gap: 2%;
+}
+#comic-description .container-md .comic-desc-wrap {
+  width: 70%;
+}
+#comic-description .container-md .adversiment {
+  width: 25%;
 }
 
 #contatti {
