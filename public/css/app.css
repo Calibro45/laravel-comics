@@ -20,7 +20,6 @@ a {
 
 img {
   width: 100%;
-  height: 100%;
   display: block;
 }
 
@@ -32,6 +31,11 @@ img {
 .container-md {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .main-header {
@@ -182,6 +186,7 @@ img {
 }
 #banner .shop-wrap .shop-item .shop-item-logo img {
   margin: 0 auto;
+  height: 100%;
 }
 #banner .shop-wrap .shop-item .shop-item-title {
   text-transform: uppercase;
@@ -228,7 +233,6 @@ img {
 #banner-comic {
   background-color: #0282f9;
   min-height: 80px;
-  margin-bottom: 25px;
   position: relative;
 }
 #banner-comic .comic-wrap {
@@ -257,6 +261,7 @@ img {
 
 #comic-description {
   color: #464646;
+  margin: 50px 0 50px 0;
 }
 #comic-description .container-md {
   display: flex;
@@ -264,9 +269,48 @@ img {
 }
 #comic-description .container-md .comic-desc-wrap {
   width: 70%;
+  padding: 10px 0;
+}
+#comic-description .container-md .comic-desc-wrap .comic-title {
+  text-transform: uppercase;
+  color: #003f5e;
+  margin-bottom: 20px;
+}
+#comic-description .container-md .comic-desc-wrap .price-wrap {
+  display: flex;
+  align-items: center;
+  background-color: #55ba59;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #357739;
+}
+#comic-description .container-md .comic-desc-wrap .price-wrap .price {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-right: 1px solid #357739;
+}
+#comic-description .container-md .comic-desc-wrap .price-wrap .price h4 {
+  color: #bafd9c;
+}
+#comic-description .container-md .comic-desc-wrap .price-wrap .price h4 span {
+  color: white;
+}
+#comic-description .container-md .comic-desc-wrap .price-wrap .price h4:first-child {
+  flex-grow: 1;
+}
+#comic-description .container-md .comic-desc-wrap .price-wrap .available {
+  color: white;
+  padding: 15px 20px;
+}
+#comic-description .container-md .comic-desc-wrap .comic-description {
+  color: #464646;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 16px;
 }
 #comic-description .container-md .adversiment {
-  width: 25%;
+  width: 28%;
 }
 
 #contatti {

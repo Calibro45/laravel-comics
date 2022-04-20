@@ -1,7 +1,6 @@
 #banner-comic {
     background-color: $primaryColor;
     min-height: 80px;
-    margin-bottom: 25px;
     position: relative;
 
     .comic-wrap {
@@ -36,17 +35,66 @@
 
 #comic-description {
     color: $primeFontColor;
-
+    margin: 50px 0 50px 0;
+    
     .container-md {
         display: flex;
         gap: 2%;
 
         .comic-desc-wrap {
             width: 70%;
+            padding: 10px 0;
+
+            .comic-title {
+                text-transform: uppercase;
+                color: $fontTitle;
+                margin-bottom: 20px;
+            }
+
+            .price-wrap {
+                display: flex;
+                align-items: center;
+                background-color: $priceBckg;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #357739;
+                
+                .price {
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 20px;
+                    border-right: 1px solid #357739;
+
+                    & h4 {
+                        color: $priceFont;
+
+                        span {
+                            color: white;
+                        }
+                    }
+
+                    & h4:first-child{
+                        flex-grow: 1;
+                    }
+
+                }
+
+                .available {
+                    color: white;
+                    padding: 15px 20px;
+                }
+            }
+
+            .comic-description {
+                color: $primeFontColor;
+                line-height: 1.6;
+                font-weight: 500;
+                font-size: 16px;
+            }
         }
     
         .adversiment {
-            width: 25%;
+            width: 28%;
         }
     }
 }
