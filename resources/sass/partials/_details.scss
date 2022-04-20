@@ -1,4 +1,32 @@
-.container-md {
-    max-width: 1024px;
-    margin: 0 auto;
+#banner-comic {
+    background-color: $primaryColor;
+    min-height: 80px;
+    position: relative;
+
+    .comic-wrap {
+        width: 210px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 15px;
+        
+        .comic {
+            color: #fff;
+            text-transform: uppercase;
+            padding: 5px 8px;
+            font-size: 14px;
+            background-color: $comicBckg;
+            position: absolute;
+
+            &.book {
+                top: 0;
+                width: 50%;
+            }
+
+            &.gallery {
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
 }

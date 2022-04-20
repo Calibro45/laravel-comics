@@ -29,6 +29,11 @@ img {
   margin: 0 auto;
 }
 
+.container-md {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .main-header {
   padding: 0 10px;
 }
@@ -220,9 +225,33 @@ img {
     width: 100%;
   }
 }
-.container-md {
-  max-width: 1024px;
-  margin: 0 auto;
+#banner-comic {
+  background-color: #0282f9;
+  min-height: 80px;
+  position: relative;
+}
+#banner-comic .comic-wrap {
+  width: 210px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 15px;
+}
+#banner-comic .comic-wrap .comic {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  font-size: 14px;
+  background-color: #00a9d9;
+  position: absolute;
+}
+#banner-comic .comic-wrap .comic.book {
+  top: 0;
+  width: 50%;
+}
+#banner-comic .comic-wrap .comic.gallery {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 #contatti {
