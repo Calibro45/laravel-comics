@@ -31,7 +31,7 @@
     }
 }
 
-// secton descpirpt
+// section descpirpt
 
 #comic-description {
     color: $primeFontColor;
@@ -95,6 +95,47 @@
     
         .adversiment {
             width: 28%;
+        }
+    }
+}
+
+// section comic info
+
+#comic-info {
+    background-color: $sectionBckg;
+    padding: 50px 10px;
+
+    .container-md {
+        display: flex;
+        gap: 2%;
+
+        .col-6 {
+            width: calc(98% / 2);
+
+            .info-title {
+                font-size: 20px;
+                color: $fontTitle;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ececec;
+            }
+
+            .info-item {
+                display: flex;
+                font-size: 14px;
+                border-bottom: 1px solid #ececec;
+                padding: 15px 0;
+                font-weight: 500;
+
+                .info-desc-title {
+                    color: $fontTitle;
+                    flex-basis: 30%;
+                }
+
+                .info-desc {
+                    color: $comicBckg;
+                    flex-basis: 70%;
+                }
+            }
         }
     }
 }

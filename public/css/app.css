@@ -313,6 +313,39 @@ img {
   width: 28%;
 }
 
+#comic-info {
+  background-color: #f6f6f6;
+  padding: 50px 10px;
+}
+#comic-info .container-md {
+  display: flex;
+  gap: 2%;
+}
+#comic-info .container-md .col-6 {
+  width: 49%;
+}
+#comic-info .container-md .col-6 .info-title {
+  font-size: 20px;
+  color: #003f5e;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+#comic-info .container-md .col-6 .info-item {
+  display: flex;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+  padding: 15px 0;
+  font-weight: 500;
+}
+#comic-info .container-md .col-6 .info-item .info-desc-title {
+  color: #003f5e;
+  flex-basis: 30%;
+}
+#comic-info .container-md .col-6 .info-item .info-desc {
+  color: #00a9d9;
+  flex-basis: 70%;
+}
+
 #contatti {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;
