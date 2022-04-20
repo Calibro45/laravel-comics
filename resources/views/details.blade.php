@@ -89,9 +89,14 @@
                         <p class="info-desc">{{ $comic['sale_date'] }}</p>
                     </li>
                 </ol>
-
             </div>
 
+        </div>
+    </section>
+
+    <section id="banner-alt">
+        <div class="container-md">
+            
         </div>
     </section>
 
