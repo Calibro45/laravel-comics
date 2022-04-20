@@ -313,6 +313,12 @@ img {
 #comic-description .container-md .adversiment {
   width: 28%;
 }
+#comic-description .container-md .adversiment h4 {
+  text-align: right;
+  color: #464646;
+  font-size: 14px;
+  padding: 5px 0;
+}
 
 #comic-info {
   background-color: #f6f6f6;

@@ -96,6 +96,13 @@
     
         .adversiment {
             width: 28%;
+
+            & h4 {
+                text-align: right;
+                color: $primeFontColor;
+                font-size: 14px;
+                padding: 5px 0;
+            }
         }
     }
 }

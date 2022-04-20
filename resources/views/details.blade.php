@@ -39,6 +39,7 @@
             </div>
 
             <figure class="adversiment">
+                <h4 class="uppercase">advertisement</h4>
                 <img src="{{ asset('img/adv.jpg') }}" alt="adversiment">
             </figure>
 
