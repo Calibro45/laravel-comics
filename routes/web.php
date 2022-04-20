@@ -24,3 +24,14 @@ Route::get('/comics', function () {
         'comics' => $comics
     ]);
 });
+
+Route::get('/comics/{id}', function($id) {
+    $comics = config('comics');
+
+    abort_if(! isset($comics[$id]), 404);
+
+    
+
+    dd($comics[$id]);
+
+})->where('id', '[0-9]+');
