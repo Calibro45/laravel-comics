@@ -265,7 +265,8 @@ img {
 }
 #comic-description .container-md {
   display: flex;
-  gap: 2%;
+  flex-wrap: wrap;
+  gap: 20px 2%;
 }
 #comic-description .container-md .comic-desc-wrap {
   width: 70%;
@@ -319,7 +320,8 @@ img {
 }
 #comic-info .container-md {
   display: flex;
-  gap: 2%;
+  gap: 20px 2%;
+  flex-wrap: wrap;
 }
 #comic-info .container-md .col-6 {
   width: 49%;
@@ -346,10 +348,21 @@ img {
   flex-basis: 70%;
 }
 
-#banner-alt {
-  background-color: #f6f6f6;
-}
+@media screen and (max-width: 768px) {
+  #comic-description .container-md .comic-desc-wrap {
+    width: 100%;
+  }
 
+  #comic-description .container-md .adversiment {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #comic-info .container-md .col-12 {
+    width: 100%;
+  }
+}
 #contatti {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;

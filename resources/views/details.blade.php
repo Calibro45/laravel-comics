@@ -1,7 +1,6 @@
 @extends('layout.standard')
 
 @section('mainContent')
-
     <section id="banner-comic">
         <div class="container-md">
             
@@ -51,7 +50,7 @@
     <section id="comic-info">
         <div class="container-md">
 
-            <div class="col-6">
+            <div class="col-6 col-12">
                 <h4 class="info-title">Talent</h4>
                 <ol>
                     <li class="info-item">
@@ -73,7 +72,7 @@
                 </ol>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 col-12">
                 <h4 class="info-title">Specs</h4>
                 <ol>
                     <li class="info-item">
@@ -93,11 +92,4 @@
 
         </div>
     </section>
-
-    <section id="banner-alt">
-        <div class="container-md">
-            
-        </div>
-    </section>
-
 @endsection
